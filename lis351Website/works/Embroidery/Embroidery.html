@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>embroidery</title>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #DB9CA4;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.exhibition {
+		font-size: 2.5em;
+		font-weight: bold;
+		color: #ffffff;
+		background-color: #333333;
+		padding: 0.5em;
+		margin-right: 1em;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+
+	.exhibition span {
+		display: block;
+		margin: 0.2em 0;
+	}
+
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 800px;
+		margin-top: 50px;
+		margin-left: 170px;
+		border: 2px solid #ccc;
+		padding: 20px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		position: relative;
+	}
+
+	.gallery img {
+		width: 30%;
+		margin: 10px 20px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	}
+
+	.left-deco,
+	.right-deco {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 20%;
+		background-color: #B58188;
+		clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+		z-index: -1;
+	}
+
+	.left-deco {
+		left: 0;
+	}
+
+	.right-deco {
+		right: 0;
+		transform: scaleX(-1);
+	}
+
+
+</style>
+</head>
+<body>
+<header>
+	<nav>
+		<a href="file:///Users/xiexinran/Documents/Spring%202023/lis351Website/works/works.html">back</a>
+	</nav>
+</header>
+<div class="left-deco"></div>
+<div class="right-deco"></div>
+<div class="wrapper">
+	<div class="exhibition">exhibition</div>
+	<div class="gallery">
+		<img src="p1.jpg" alt="the beginning of embroidery">
+		<img src="p2.jpg" alt="the process of embroidery">
+		<img src="p3.jpg" alt="the finishing of embroidery">
+	</div>
+</div>
+</body>
+</html>
